@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+
+  <body>
+    <header class="Header" id="Header">
+      <div class="LogoNavbar">
+        <button
+          class="Navbar_menu"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample"
+        >
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel"
+        >
+          <div class="offcanvas-header">
+            <img src="./assets/logo.png" alt="LOGO LITORAL NA MÃO" />
+            <a
+              data-bs-toggle="offcanvas"
+              href="#offcanvasExample"
+              role="button"
+              aria-controls="offcanvasExample"
+            >
+              <ion-icon name="close-outline"></ion-icon>
+            </a>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="NavbarMobile">
+              <li class="Navbar_item">INICIO</li>
+              <li class="Navbar_item">QUEM SOMOS</li>
+              <li class="Navbar_item">ANUNCIE</li>
+              <li class="Navbar_item">PRIVACIDADE</li>
+              <li class="Navbar_item">INSTALAÇÃO</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="Logo">
+          <img src="./assets/logo.png" alt="LOGO LITORAL NA MÃO" />
+          <h1 class="Logo_text">LITORAL NA MÃO</h1>
+        </div>
+        <ul class="NavbarDesktop">
+          <li class="Navbar_item">INICIO</li>
+          <li class="Navbar_item">QUEM SOMOS</li>
+          <li class="Navbar_item">ANUNCIE</li>
+          <li class="Navbar_item">PRIVACIDADE</li>
+          <li class="Navbar_item">INSTALAÇÃO</li>
+        </ul>
+      </div>
+      <form class="FieldSearch">
+        <input type="text" class="FieldSearch_input" />
+        <button type="submit" class="FieldSearch_button">
+          <ion-icon name="search"></ion-icon>
+        </button>
+      </form>
+    </header>
+    <main></main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
