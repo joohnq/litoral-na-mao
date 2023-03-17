@@ -133,33 +133,33 @@
   position: absolute;
 }
 
-.CategoriesTitle {
+#Categories .CategoriesTitle {
   color: #fff;
   margin-bottom: 20px;
 }
 
-.CategoriesSwiper {
+#Categories .CategoriesSwiper {
   background: var(--orage);
   border-radius: 30px;
 }
 
-.CategoriesSwiper .swiper-slide {
+#Categories .CategoriesSwiper .swiper-slide {
   background-color: #fff;
   border-radius: 30px;
   padding: 30px;
 }
-.CategoriesSwiper .swiper-button-next,
-.CategoriesSwiper .swiper-button-prev,
-.AdvertisersSwiper .swiper-button-next,
-.AdvertisersSwiper .swiper-button-prev {
+#Categories .CategoriesSwiper .swiper-button-next,
+#Categories .CategoriesSwiper .swiper-button-prev,
+#Advertisers .AdvertisersSwiper .swiper-button-next,
+#Advertisers .AdvertisersSwiper .swiper-button-prev {
   width: 30px !important;
   height: 30px !important;
 }
 
-.CategoriesSwiper .swiper-button-next:after,
-.CategoriesSwiper .swiper-button-prev:after,
-.AdvertisersSwiper .swiper-button-next:after,
-.AdvertisersSwiper .swiper-button-prev:after {
+#Categories .CategoriesSwiper .swiper-button-next:after,
+#Categories .CategoriesSwiper .swiper-button-prev:after,
+#Advertisers .AdvertisersSwiper .swiper-button-next:after,
+#Advertisers .AdvertisersSwiper .swiper-button-prev:after {
   width: 100%;
   height: 100%;
   display: flex;
@@ -175,13 +175,98 @@
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
 }
 
-.AdvertisersSwiper{
+#Advertisers .AdvertisersSwiper {
   margin-top: 50px;
 }
-.AdvertisersSwiper .swiper-slide {
+#Advertisers .AdvertisersSwiper .swiper-slide {
   background-color: #d9d9d9;
   height: 200px !important;
   margin-top: -50px;
+}
+
+#Destiny .DestinyForm {
+  max-width: 700px;
+  margin: 80px auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#Destiny .DestinyForm_input {
+  width: 90%;
+  background-color: var(--orage);
+  height: 50px;
+  padding-left: 10px;
+}
+
+
+#Destiny .DestinyForm_input:focus {
+  outline: 0;
+  border: 0;
+}
+
+#Destiny .DestinyForm_input::placeholder {
+  color: #fff;
+}
+
+#Destiny .DestinyForm_btn {
+  width: 10%;
+  background-color: var(--orage);
+  color: #fff;
+  height: 50px;
+}
+
+#Destiny .DestinyAccordionHeaders {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 30px;
+  border-bottom: 2px solid var(--blue);
+}
+#Destiny .accordion {
+  --bs-accordion-btn-active-icon: none !important;
+  margin-bottom: 100px;
+}
+
+#Destiny .accordion-button {
+  background-color: #d9d9d9 !important;
+  border-radius: 20px 20px 0 0 !important;
+  text-align: center;
+  color: var(--blue);
+  font-weight: bold !important;
+}
+
+#Destiny .accordion-body {
+  background: var(--blue);
+  color: #fff !important;
+}
+
+#Destiny .accordion-item {
+  border: none !important;
+  border-radius: 0 0 20px 20px !important;
+}
+
+#Destiny .accordion-button::after {
+  background-image: none !important;
+  width: 0 !important;
+}
+
+#Destiny .accordion-button:focus {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#Destiny .accordion-button.collapsed {
+  height: 40px !important;
+  bottom: 0 !important;
+  color: var(--blue) !important;
+}
+
+#Destiny .accordion-button:not(.collapsed) {
+  height: 50px !important;
+  color: var(--blue) !important;
 }
 
 @media screen and (min-width: 0) {
@@ -210,12 +295,12 @@
   #Categories {
     margin-top: 50px;
   }
-  .CategoriesSwiper {
+  #Categories .CategoriesSwiper {
     background: var(--orage);
     border-radius: 30px;
     padding: 30px !important;
   }
-  .CategoriesSwiper .swiper-slide {
+  #Categories .CategoriesSwiper .swiper-slide {
     height: 150px !important;
     width: 150px !important;
   }
