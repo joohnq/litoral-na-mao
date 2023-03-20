@@ -1,0 +1,45 @@
+#CardsGuide {
+  margin-bottom: 200px;
+  position: relative;
+}
+
+#CardsGuide .GroupCard {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+  justify-items: center;
+  justify-content: center;
+  gap: 30px;
+  row-gap: 50px;
+}
+
+#CardsGuide .Card {
+  width: 100%;
+  border-bottom: 3px solid var(--blue);
+}
+
+#CardsGuide .Card_title {
+  font-weight: bold;
+}
+
+#CardsGuide .Card_desc {
+  color: var(--red);
+}
+
+#CardsGuide .Card_subtitle {
+  color: var(--blue-light);
+  font-weight: 600;
+}
+
+#CardsGuide .btnMore {
+  background-color: var(--red);
+  color: #fff;
+  border: 0;
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-weight: 600;
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  transform: translate(-50%);
+}
