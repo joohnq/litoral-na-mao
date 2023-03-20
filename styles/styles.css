@@ -123,17 +123,21 @@
   position: absolute;
 }
 
+#Categories {
+  background: var(--orage);
+  border-radius: 10px;
+}
+
+#Categories .owl-dots {
+  display: none;
+}
+
 #Categories .CategoriesTitle {
   color: #fff;
   margin-bottom: 20px;
 }
 
-#Categories .CategoriesSwiper {
-  background: var(--orage);
-  border-radius: 30px;
-}
-
-#Categories .CategoriesSwiper .swiper-slide {
+#Categories .CategoriesSwiper .item {
   background-color: #fff;
   border-radius: 30px;
   padding: 30px;
@@ -168,7 +172,11 @@
 #Advertisers .AdvertisersSwiper {
   margin-top: 50px;
 }
-#Advertisers .AdvertisersSwiper .swiper-slide {
+
+#Advertisers .owl-dots {
+  display: none;
+}
+#Advertisers .AdvertisersSwiper .item {
   background-color: #d9d9d9;
   height: 200px !important;
   margin-top: -50px;
@@ -255,7 +263,9 @@
 
 #Destiny .accordion-button:not(.collapsed) {
   height: 50px !important;
-  color: var(--blue) !important;
+  color: #fff !important;
+  background-color: var(--blue) !important;
+  box-shadow: none !important;;
 }
 
 #SearchAll {
@@ -325,18 +335,46 @@
   }
   #Categories {
     margin-top: 50px;
-  }
-  #Categories .CategoriesSwiper {
-    background: var(--orage);
-    border-radius: 30px;
     padding: 30px !important;
   }
-  #Categories .CategoriesSwiper .swiper-slide {
+  #Categories .CategoriesSwiper .item {
     height: 150px !important;
     width: 150px !important;
   }
   #SearchAll .SearchAll_field {
     padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #Destiny .DestinyAccordionHeaders {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    border: 0;
+  }
+
+  #Destiny .accordion-header {
+    width: 100% !important;
+  }
+
+  #Destiny .accordion-button.collapsed {
+    height: 50px !important;
+    color: var(--blue) !important;
+  }
+
+  #Destiny .accordion-button:not(.collapsed) {
+    height: 50px !important;
+    color: #ffff !important;
+    background-color: var(--blue) !important;
+  }
+
+  #Destiny .accordion {
+    margin-bottom: 50px;
+  }
+
+  #Destiny .accordion-button {
+    border-radius: 0 !important;
   }
 }
 
