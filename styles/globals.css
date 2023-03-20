@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+  }
+  :root {
+    --orage: #eb6330;
+    --blue: #193c53;
+    --gray: #d9d9d9;
+    --green-water: #08B7B0;
+  }
+  

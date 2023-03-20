@@ -1,0 +1,156 @@
+#SearchAll {
+  background-color: var(--blue);
+  width: 100%;
+  padding: 50px 0;
+  gap: 20px;
+}
+
+#SearchAll .SearchAll_field {
+  max-width: 700px;
+  margin: 0 auto;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#SearchAll .SearchAll_input {
+  height: 100%;
+  border: 0;
+  width: 100%;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+#SearchAll .SearchAll_button {
+  width: 50px;
+  vertical-align: middle;
+  background-color: transparent;
+}
+
+#SearchAll .SearchAll_button ion-icon {
+  font-size: 30px;
+  color: #fff;
+}
+
+#BannerApresentation {
+  width: 100%;
+  background-color: gainsboro;
+}
+
+#BannerApresentation .BannerApresentation_title {
+  position: absolute;
+  right: 10%;
+  color: #fff;
+  text-align: end;
+  top: 50%;
+  transform: translateY(50%);
+  margin-bottom: 0;
+}
+
+#CardsInfo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  gap: 20px;
+  justify-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#CardsInfo .Card {
+  width: 100%;
+  border: 5px solid var(--blue);
+  border-radius: 20px;
+  padding: 35px;
+  cursor: pointer;
+}
+
+#CardsInfo .Card:hover {
+  background-color: var(--blue);
+  transition: 0.1s linear;
+}
+
+#CardsInfo .Card:hover > .Card_title {
+  color: #fff;
+}
+
+#CardsInfo .Card_title {
+  color: var(--blue);
+  text-align: center;
+  margin-bottom: 0 !important;
+}
+
+#ButtonsSettings {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  gap: 50px;
+  justify-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.ButtonsSettings_btn {
+  background-color: aquamarine;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 20px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.ButtonsSettings_btn:hover {
+  transform: scale(1.1);
+  transition: 0.1s linear;
+}
+
+@media screen and (min-width: 0) {
+  #SearchAll .SearchAll_field {
+    padding: 0 20px;
+  }
+  .BannerApresentation_title {
+    font-size: 30px;
+  }
+  #BannerApresentation {
+    height: calc(100vh - 210px);
+    width: 100%;
+    background-color: gainsboro;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .BannerApresentation_title {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .BannerApresentation_title {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .BannerApresentation_title {
+    font-size: 60px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #BannerApresentation {
+    height: calc(100vh - 250px);
+    width: 100%;
+    background-color: gainsboro;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .BannerApresentation_title {
+    font-size: 70px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .BannerApresentation_title {
+    font-size: 90px;
+  }
+}
