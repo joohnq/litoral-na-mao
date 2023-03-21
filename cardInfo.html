@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <title>GUIA</title>
+    <title>CARD INFO</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -17,9 +17,19 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./styles/styles.css" />
-    <link rel="stylesheet" href="./styles/info.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
-    <link rel="stylesheet" href="./styles/guide.css" />
+    <link rel="stylesheet" href="./styles/cardInfo.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
   </head>
 
   <body>
@@ -99,6 +109,57 @@
           </button>
         </div>
       </form>
+      <div class="Home container">
+        <h2 class="title">BOAT SERVICE</h2>
+        <img class="Home_image" src="./assets/background-example.jpg" alt="" />
+      </div>
+      <div class="MoreInfo">
+        <div class="MoreInfoMap" id="map"></div>
+        <aside class="MoreInfoAside">
+          <div class="MoreInfoAside_field">
+            <h3 class="MoreInfoAside_field-title">Endereço</h3>
+            <p class="MoreInfoAside_field-desc mb-3">
+              Av. Almirante Tamandaré, 269
+              <ion-icon name="location-sharp"></ion-icon>
+            </p>
+          </div>
+          <div class="MoreInfoAside_field">
+            <h3 class="MoreInfoAside_field-title">Telefones</h3>
+            <p class="MoreInfoAside_field-desc mb-3">
+              (12) 3896-5541
+              <ion-icon name="call-sharp"></ion-icon>
+            </p>
+          </div>
+          <div class="MoreInfoAside_field">
+            <h3 class="MoreInfoAside_field-title">Horário de Funcionamento</h3>
+            <p class="MoreInfoAside_field-desc mb-0">Segunda a Sexta</p>
+            <p class="MoreInfoAside_field-desc--thin">
+              08:00 / 12:00 - 13:00 18:00
+            </p>
+            <p class="MoreInfoAside_field-desc mb-0">
+              Sábados e domingos e feriados
+            </p>
+            <p class="MoreInfoAside_field-desc--thin">
+              08:00 / 12:00 - 13:00 18:00
+            </p>
+          </div>
+          <div class="MoreInfoAside_field">
+            <h3 class="MoreInfoAside_field-title">Formas de Pagamento</h3>
+          </div>
+          <div class="MoreInfoAside_field">
+            <h3 class="MoreInfoAside_field-title">Sobre</h3>
+            <p class="MoreInfoAside_field-desc">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic
+              veniam obcaecati eligendi aut vel alias odit beatae minus natus,
+              repudiandae saepe quos reprehenderit ea a iste? Quasi in ab et?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum autem
+              corporis laborum tempore accusantium, iusto, dolore odio nostrum
+              commodi id repellat, excepturi saepe a? Doloremque iusto eum
+              praesentium? Nesciunt, repudiandae!
+            </p>
+          </div>
+        </aside>
+      </div>
     </main>
     <footer>
       <!-- place footer here -->
@@ -123,14 +184,12 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
     <script>
-      const btnMore = document.querySelector(".btnMore");
-      btnMore.addEventListener("click", (e) => {
-        const GroupCard = e.target.previousElementSibling;
-        const CardsGuide = e.target.parentNode;
-
-        const ClonedGroupCard = GroupCard.cloneNode(true);
-        CardsGuide.appendChild(ClonedGroupCard);
-      });
+      var map = L.map("map").setView([51.505, -0.09], 13);
+      L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution:
+          '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      }).addTo(map);
     </script>
   </body>
 </html>

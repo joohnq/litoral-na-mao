@@ -318,6 +318,7 @@
 .title {
   text-align: center;
   margin-top: 50px;
+  color: var(--blue);
 }
 @media screen and (min-width: 0) {
   .title {
